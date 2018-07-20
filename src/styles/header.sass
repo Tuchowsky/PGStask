@@ -1,0 +1,73 @@
+header
+    background-color: $header-color
+    height: 140px
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(231,236,238,1)
+    -moz-box-shadow: 0px 2px 5px 0px rgba(231,236,238,1)
+    box-shadow: 0px 2px 5px 0px rgba(231,236,238,1)
+
+    .header-container
+        position: relative
+        height: 100%
+    
+        .logo
+            //align-self: flex-start
+            margin-top: 30px
+
+            a
+                img
+                    height: 55px
+
+        .navig
+            position: absolute
+            left: 15px   
+            bottom: 0
+            //align-self: flex-end
+
+            .menu
+                margin: 0
+
+                .menu-item
+                    position: relative
+                    padding-bottom: 10px
+                    text-transform: uppercase
+
+                    a 
+                        color: $font-color
+                        font-weight: bold
+
+                .menu-item:last-child
+                    margin-right: 0px
+
+                .menu-item:hover a 
+                    color: $hover-font-color
+
+                .menu-item-active
+                    -webkit-transition: all .9s
+
+                    a 
+                        color: $hover-font-color
+
+            
+                .menu-item-active::after
+                    content: ""
+                    height: 2px
+                    width: 100%
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    -webkit-transition: all .9s
+                    background-color: $hover-font-color
+
+
+
+header a
+    transition: all .5s
+    font-size: 12px  
+    
+    letter-spacing: 1px
+
+    // header .menu > .menu-item
+    //     padding-right: 32px
+
+    // header .menu > .menu-item:last-child
+    //     padding-right: 0px

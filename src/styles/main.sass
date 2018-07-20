@@ -1,0 +1,102 @@
+
+$font-color: #000
+$hover-font-color: #FF7626
+
+$button-color: #2196f3
+
+$header-color: #fff
+$section-color: #f8f8f8
+
+$font-color: #666
+$footer-font-color: #6e6e6e
+
+$dark-container-color: #f5f5f5
+$light-container-color: #fff
+
+$home-button-color: #3fae49
+
+$light-font-color: #fff
+$dark-font-color: #777777
+
+$footer-color: #282828
+
+$desktop-container-width: 930px
+
+*
+    margin: 0
+    padding: 0 
+
+p
+    margin: 0
+    padding: 0
+
+a:hover 
+    text-decoration: none
+    color: $light-font-color
+
+html, body
+    height: 100%
+    background-color: $section-color
+
+body
+    font-family: 'Roboto', sans-serif
+
+button
+    cursor: pointer
+    transition: all 1500ms cubic-bezier(0.19, 1, 0.22, 1)
+    outline: 1px solid
+    outline-color: $home-button-color
+    outline-offset: -5px
+ 
+
+//help classes
+.scale-down
+    transform: scale(0)
+
+.scale-up
+    transform: scale(1)
+
+.hidden
+    display: none
+
+.center
+    display: flex
+    align-items: center
+    justify-content: center
+
+.horizontal-center
+    display: flex
+    justify-content: center
+
+.vertical-center
+    display: flex
+    align-items: center
+
+.main-width
+    width: $desktop-container-width
+
+
+.pos-static
+    position: static
+    transition: all 1s
+
+.pos-absolute
+    position: absolute
+    transition: all 1s
+
+::-webkit-scrollbar
+	width: 3px
+
+::-webkit-scrollbar-thumb
+	background-color: $footer-color
+
+
+
+@import "src/styles/header.sass"
+@import "src/styles/welcome.sass"
+
+@import "src/styles/main-section.sass"
+@import "src/styles/footer.sass"
+
+@import "src/styles/media-queries.sass"
+
